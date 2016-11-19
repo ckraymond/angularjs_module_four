@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+ <meta charset="UTF-8">
+ <title>Module Four Project | Restaruant Menu</title>
+ <meta name="test program" content="test program">
+
+ <!-- Import stylesheets -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Add the NavBar -->
+  <nav class = "navbar navbar-default">
+    <div class = "container-fluid">
+      <div class = "navbar-header">
+        <div class = "navbar-brand">
+         Addie's Chinese Restaurant
+       </div> <!--- NavBar Brand -->
+     </div> <!-- Navbar Header -->
+   </div> <!-- Container fluid -->
+  </nav> <!-- Navbar start -->
+
+  <div class = "container-fluid">
+    <ui-view></ui-view>
+  </div>
+
+
+  <!-- Import Javascript Libraries -->
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-ui-router.min.js"></script>
+  <script src="lib/jquery-3.1.1.slim.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+
+  <!-- Import Javascript Modules -->
+  <script src="src/data.module.js"></script>
+  <script src="src/menuapp.module.js"></script>
+
+  <!-- Import JavaScript Routes -->
+  <script src="src/routes.js"></script>
+
+  <!-- Import Javascript Module artifacts -->
+  <script src="src/categories.component.js"></script>
+  <script src="src/items.component.js"></script>
+  <script src="src/menudata.service.js"></script>
+  <script src="src/categories.controller.js"></script>
+  <script src="src/items.controller.js"></script>
+
+</body>
+
+</html>
